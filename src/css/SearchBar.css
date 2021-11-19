@@ -1,0 +1,17 @@
+.SearchForm{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width:100%;
+}
+.SearchForm input[type=text]{
+    padding:12px;
+    width:90%;
+    border: 1px solid #CCCCCC;
+}
+.SearchForm input[type=submit]{
+   width: 10%;
+    padding:7.1px;
+    background-color:#F8F8F8;
+    border:1px solid #CCCCCC;
+}
