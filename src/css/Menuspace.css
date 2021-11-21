@@ -1,0 +1,66 @@
+.MenuOptionList{
+    width:100%;    
+}
+
+.MenuOptionList li{
+    padding-left: 1.5em;
+    list-style: none;
+    text-align: left;
+    color: #000000;
+    padding-top:5px;
+    padding-bottom:9px;
+    display: flex;
+    align-items: center;
+    text-transform:capitalize;
+    width:100%;
+    overflow-x:hidden;
+}
+
+.MenuOptionList li span{
+    padding-right: 14px;
+}
+
+.MenuOptionList li:first-of-type{
+    background-color: #D9D9D9;
+    font-weight: 500;
+}
+
+.MenuOptionList li:hover{
+    background-color: rgba(217,217,217,0.5);
+}
+
+span.CategoryDivider{
+    display:block;
+    width:100%;
+    border-bottom: 1px solid #CCCCCC;
+    margin:12px 0px;
+}
+
+span.CategoryDivider ~ p{
+    padding-left:1.5em;
+    font-weight: 550;
+    color: #7F6C65;
+    text-transform: uppercase;
+}
+
+.SubscriptionListPic{
+    width:30px;
+    height:30px;
+    border:1px solid #FFFFFF;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+.SubscriptionListTitle{
+    width:100% !important;
+    white-space: nowrap; 
+    overflow-x:hidden;
+    text-overflow: ellipsis;   
+}
+
+.SubscriptionSensor{
+    color: #f00f0f;
+    font-weight: lighter;
+    font-size: medium;
+    text-align: right;
+}
