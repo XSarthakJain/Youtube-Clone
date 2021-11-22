@@ -23,4 +23,5 @@
   height:100vh;
   flex:0.8;
   padding: 1em;
+  padding-right: 0;
 }

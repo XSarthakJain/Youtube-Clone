@@ -3,6 +3,7 @@ import './App.css';
 import Header from './header.jsx';
 import Menuspace from './Menuspace.jsx';
 import Recommendedtags from './Recommendedtags';
+import Mediaspace from './Mediaspace';
 function App() {
   return (
     <React.Fragment>
@@ -13,6 +14,7 @@ function App() {
     </section>
     <section className="RightSideSpace">
     <Recommendedtags></Recommendedtags>
+    <Mediaspace></Mediaspace>
     </section>
     </div>
     </React.Fragment>
