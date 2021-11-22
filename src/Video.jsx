@@ -18,6 +18,7 @@ let VideoCard = (Vdata)=>{
                 <div className="ChannelInfo">
                     <div class="ChannelInfoNameOuter">
                     <span>{Vdata.ChannelName}</span>
+                    
                     <span class="material-icons ChnnelBlueTic">
                     check_circle
                     </span>

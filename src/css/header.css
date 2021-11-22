@@ -9,6 +9,8 @@ header{
     display: flex;
     align-items: center;
     margin: 0px 0px 0px 1em;
+    position: fixed;
+    top:0;
 }
 .headerHamburger{
     margin-right: 1em;

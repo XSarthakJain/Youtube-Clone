@@ -5,7 +5,8 @@ let Videosdata = [
         "ChannelName":"Tic Tac Toe",
         "VideoTitle":"How to PLay Tic Toe Game",
         "Views":"120K Views",
-        "UploadTime":"2 hours ago"
+        "UploadTime":"2 hours ago",
+        "BlueTic":true
     },
     {
         "BannerImage":"https://i0.wp.com/wikipura.com/wp-content/uploads/2021/04/maxresdefault-3.jpg",

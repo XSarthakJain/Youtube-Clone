@@ -5,6 +5,7 @@ import './css/Recommendedtags.css';
 let Recommendedtags = ()=>{
     return (
         <React.Fragment>
+            <div className="RecommendedTagOuter">
             <span class="RecommendedTag">All</span>
             <span class="RecommendedTag">Songs</span>
             <span class="RecommendedTag">Movies</span>
@@ -14,6 +15,7 @@ let Recommendedtags = ()=>{
             <span class="RecommendedTag">Bollywood</span>
             <span class="RecommendedTag">Current Update</span>
             <span class="RecommendedTag">Live</span>
+            </div>
         </React.Fragment>
     );
 }
