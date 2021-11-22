@@ -1,6 +1,9 @@
 .Video{
     width: 220px;
     height:270px;
+    margin-top:1em;
+    margin-right:1em;
+    cursor: pointer;
     /* background-color: #FFFFFF; */
 }
 
@@ -10,6 +13,12 @@
     background-color: violet;
 }
 
+.BannerImage img{
+    width:100%;
+    height:135px;
+    object-fit: cover;
+}
+
 .VideoContaintInfo{
     width:100%;
     height:119px;
@@ -17,14 +26,15 @@
     display: flex;
     /* background-color: yellow; */
 }
-
-.ChannelPic{
+.ChannelPicOuter{
     flex:0.2;
+}
+.ChannelPic{
     width: 30px;
     height: 30px;
     border:1px solid #FFFFFF;
     border-radius: 50%;
-    object-fit: contain;
+    object-fit:cover;
 }
 .VideoInnerInfo{
     flex:0.7;
