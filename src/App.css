@@ -4,13 +4,23 @@
   box-sizing: border-box;
 }
 
-
+.OuterMainSpace{
+  display: flex;
+}
 .LeftSideSpace{
   width:200px;
   height: 85vh;
   overflow:hidden;    
+  flex:0.2;
 }
 
 .LeftSideSpace:hover{
   overflow-y:auto;
+}
+
+.RightSideSpace{
+  width:800px;
+  height:100vh;
+  flex:0.8;
+  padding: 1em;
 }
