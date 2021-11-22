@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import Header from './header.jsx';
 import Menuspace from './Menuspace.jsx';
-import Recommendedtags from './Recommendedtags';
-import Mediaspace from './Mediaspace';
+import Recommendedtags from './Recommendedtags.jsx';
+import Mediaspace from './Mediaspace.jsx';
 function App() {
   return (
     <React.Fragment>
