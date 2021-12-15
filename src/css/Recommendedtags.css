@@ -1,14 +1,53 @@
+.RecommendedTagOuter{
+    overflow: hidden;
+    overflow-x:hidden; 
+    height: 2em; 
+    display: flex;
+    margin-left: 1.5em;
+    margin-right:1.5em;
+}
+
 .RecommendedTag{
     background-color: #E8E8E8;
     border:1px solid #D0D0D0;
     color:#000000;
     padding:4px 12px;
-    padding-bottom: 6px;
+    padding-bottom: px;
     border-radius: 25px;
     margin-left: 8px;
     cursor: pointer;
+    display:inline-block;
 }
 
 .RecommendedTag:hover{
     background-color: #CCCCCC;
+}
+
+
+.RecommendedTagMasterOuter{
+    position: relative;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+#LeftScroll{
+    position: absolute;
+    left:0;
+    top:0;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    border:1px solid gray;
+    cursor: pointer;
+}
+
+#RightScroll{
+    position:absolute;
+    right:0;
+    top:0;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    border:1px solid gray;
+    cursor: pointer;
 }
