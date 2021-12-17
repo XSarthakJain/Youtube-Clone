@@ -32,14 +32,14 @@
     /* position:fixed;
     top:65px;
     right:0; */
-    background-color: #FFFFFF;
+    background-color: #F9F9F9;
 }
 
 #LeftScroll{
     position: absolute;
     left:0;
     top:5px;
-    background-color: #FFFFFF;
+    background-color: #F9F9F9;
     outline: none;
     border: none;
     cursor: pointer;
@@ -50,7 +50,7 @@
     position:absolute;
     right:0;
     top:5px;
-    background-color: #FFFFFF;
+    background-color: #F9F9F9;
     outline: none;
     border: none;
     cursor: pointer;

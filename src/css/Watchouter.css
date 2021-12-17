@@ -1,0 +1,16 @@
+.MasterWatchOuter{
+    margin-top:65px;
+    background-color: #F9F9F9;
+    padding:2em;
+    display:flex;
+}
+
+
+.LeftWatchOuter{
+    width:60%;
+    height:100%;
+}
+.RightWatchOuter{
+    width:40%;
+    height:100%;
+}

@@ -1,22 +1,19 @@
 import React from 'react';
 import './App.css';
 import Header from './header.jsx';
-import Menuspace from './Menuspace.jsx';
-import Recommendedtags from './Recommendedtags.jsx';
-import Mediaspace from './Mediaspace.jsx';
+import Defaultscreen from './Defaultscreen.jsx';
+import WatchOuter from './WatchOuter.jsx';
+import { BrowserRouter, Routes ,Route } from 'react-router-dom';
 function App() {
   return (
     <React.Fragment>
     <Header></Header>
-    <div className="OuterMainSpace">
-    <section className="LeftSideSpace">
-      <Menuspace></Menuspace>
-    </section>
-    <section className="RightSideSpace">
-    <Recommendedtags></Recommendedtags>
-    <Mediaspace></Mediaspace>
-    </section>
-    </div>
+    <BrowserRouter>
+    <Routes>
+        <Route exact path="/" element={<Defaultscreen/>}/>
+        <Route exact path="/watch" element={<WatchOuter/>}/>
+      </Routes>
+    </BrowserRouter>
     </React.Fragment>
   );
 }

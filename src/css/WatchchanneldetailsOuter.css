@@ -1,0 +1,49 @@
+.WatchchanneldetailsOuter{
+    display: flex;
+    align-items: center;
+    padding-top:1em;
+    padding-bottom:1em;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.WatchchanneldetailsOuter div{
+    flex:0.1;
+}
+.WatchchanneldetailsOuter div img{
+    width:30px;
+    height:30px;
+}
+
+.WatchchanneldetailsInnerCenter{
+    flex:0.8 !important;
+    width:100%;
+}
+
+.WatchchanneldetailsInnerCenter h4{
+    color: #030303;
+    font-weight: 500;
+}
+.WatchchanneldetailsInnerCenter span.material-icons{
+    color:gray;
+    font-size: medium;
+    align-items:center;
+    vertical-align: middle;
+    margin-left:4px;
+}
+
+.WatchchanneldetailsInnerCenter small:first-of-type{
+    display: inline-block;
+    color: #746760;
+}
+.WatchchanneldetailsInnerRight{
+    flex:0.1;
+}
+
+.WatchchanneldetailsInnerRight button{
+    background-color: #CC0000;
+    color: #FFFFFF;
+    border:none;
+    padding:8px 12px;
+    font-size: medium;
+    border-radius: 2px;
+}
