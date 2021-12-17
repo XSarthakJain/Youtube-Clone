@@ -2,6 +2,7 @@ import React from 'react';
 import './css/Video.css';
 import Videosdata from './Videosdata.jsx';
 import preview from './media/Preview.mp4';
+import {NavLink} from 'react-router-dom';
 
 let VideoCard = (Vdata,ind)=>{
     let hoverImageData;
@@ -26,6 +27,7 @@ let VideoCard = (Vdata,ind)=>{
     }
     return (
         <React.Fragment>
+        <NavLink exact to="/watch" style={{textDecoration: 'none'}}>
         <section class="Video">
             <div class="BannerImage" onMouseOver={()=>playVideoOnImage(ind)} onMouseLeave={()=>removeVideoOnImage(ind)}>
                 <img src={Vdata.BannerImage} alt="BannerImage"/>
@@ -64,6 +66,7 @@ let VideoCard = (Vdata,ind)=>{
                 </span>
             </div>
         </section>
+        </NavLink>
     </React.Fragment>
     );
 }

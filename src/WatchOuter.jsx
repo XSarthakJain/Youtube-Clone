@@ -2,7 +2,7 @@ import React from 'react';
 import './css/Watchouter.css';
 import Watchvideo from './Watchvideo.jsx';
 import Recommendedtags from './Recommendedtags.jsx';
-
+import Recommendedvideo from './Recommendedvideo.jsx';
 let WatchOuter = ()=>{
     return (
         <React.Fragment>
@@ -12,6 +12,7 @@ let WatchOuter = ()=>{
                 </div>
                 <div className="RightWatchOuter">
                     <Recommendedtags/>
+                    <Recommendedvideo/>
                 </div>
             </div>
         </React.Fragment>
