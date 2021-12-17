@@ -3,13 +3,32 @@ import './css/Recommendedtags.css';
 
 
 let Recommendedtags = ()=>{
+    let scrollButtonHidden = ()=>{
+        let left = document.getElementsByClassName("RecommendedTagOuter")[0].scrollLeft;
+        let scrollWidth = document.getElementsByClassName("RecommendedTagOuter")[0].scrollWidth;
+        if(left<=0){
+            document.getElementById("LeftScroll").style.display="none";
+        }
+        else{
+            document.getElementById("LeftScroll").style.display="block";
+        }
+        if(left>=scrollWidth){
+            document.getElementById("RightScroll").style.display="none";
+        }
+        else{
+            document.getElementById("RightScroll").style.display="block";
+        }
+    }
     let scrollRight = ()=>{
         document.getElementsByClassName("RecommendedTagOuter")[0].scrollLeft+=50;
+        scrollButtonHidden();
     }
     
     let scrollLeft= ()=>{
         document.getElementsByClassName("RecommendedTagOuter")[0].scrollLeft-=50;
+        scrollButtonHidden();
     }
+    
     return (
         <React.Fragment>
             <div className="RecommendedTagMasterOuter">
@@ -81,7 +100,10 @@ let Recommendedtags = ()=>{
             </div>
             </div>
         </React.Fragment>
+        
     );
+
+    scrollButtonHidden();
 }
 
 

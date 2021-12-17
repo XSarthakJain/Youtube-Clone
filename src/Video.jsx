@@ -1,12 +1,33 @@
 import React from 'react';
 import './css/Video.css';
 import Videosdata from './Videosdata.jsx';
+import preview from './media/Preview.mp4';
 
-let VideoCard = (Vdata)=>{
+let VideoCard = (Vdata,ind)=>{
+    let hoverImageData;
+    let hoverImageDataNumber;
+    let playVideoOnImage = (val)=>{ 
+        if(hoverImageDataNumber){
+        document.getElementsByClassName("BannerImage")[hoverImageDataNumber].innerHTML = hoverImageData;
+        }
+        let BannerImage = document.getElementsByClassName("BannerImage")[ind];
+        hoverImageData = BannerImage.innerHTML;
+        BannerImage.innerHTML = `<video width="220" height="140" controls autoplay style="z-index:1;">
+        <source src=${preview} type="video/mp4">
+        <source src="${preview}.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>`
+      hoverImageDataNumber = val;
+    }
+
+    let removeVideoOnImage = (val)=>{
+        // alert("Remove Data"+val+""+hoverImageData);
+        document.getElementsByClassName("BannerImage")[val].innerHTML = hoverImageData;
+    }
     return (
         <React.Fragment>
         <section class="Video">
-            <div class="BannerImage">
+            <div class="BannerImage" onMouseOver={()=>playVideoOnImage(ind)} onMouseLeave={()=>removeVideoOnImage(ind)}>
                 <img src={Vdata.BannerImage} alt="BannerImage"/>
             </div>
             <div class="VideoContaintInfo">

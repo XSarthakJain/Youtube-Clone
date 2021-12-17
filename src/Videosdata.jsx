@@ -1,7 +1,8 @@
+import video1 from './media/Preview.mp4';
 let Videosdata = [
     {
-        "BannerImage":"https://cdn.wallpapersafari.com/78/10/zs7RxP.jpg",
-        "ChannelPic":"https://www.essence.com/wp-content/uploads/2020/12/adonis-bosso-1200x1200.jpg",
+        "BannerImage": "https://cdn.wallpapersafari.com/78/10/zs7RxP.jpg",
+        "ChannelPic": "https://www.essence.com/wp-content/uploads/2020/12/adonis-bosso-1200x1200.jpg",
         "ChannelName":"Tic Tac Toe",
         "VideoTitle":"How to PLay Tic Toe Game",
         "Views":"120K Views",

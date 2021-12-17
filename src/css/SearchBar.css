@@ -8,6 +8,7 @@
     padding:12px;
     width:90%;
     border: 1px solid #CCCCCC;
+    outline: none;
 }
 .SearchForm input[type=submit]{
    width: 10%;

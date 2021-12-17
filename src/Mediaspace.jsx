@@ -7,13 +7,6 @@ let Mediaspace = ()=>{
         <React.Fragment>
             <section className="MediaspaceOuter">
                 <Video></Video>
-                <Video></Video>
-                <Video></Video>
-                <Video></Video>
-                <Video></Video>
-                <Video></Video>
-                <Video></Video>
-                <Video></Video>
             </section>
         </React.Fragment>
     );

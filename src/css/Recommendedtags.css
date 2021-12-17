@@ -28,26 +28,31 @@
     position: relative;
     margin-right: 1em;
     margin-left: 1em;
+    /* width:100%; */
+    /* position:fixed;
+    top:65px;
+    right:0; */
+    background-color: #FFFFFF;
 }
 
 #LeftScroll{
     position: absolute;
     left:0;
-    top:0;
-    width:35px;
-    height:35px;
-    border-radius:50%;
-    border:1px solid gray;
+    top:5px;
+    background-color: #FFFFFF;
+    outline: none;
+    border: none;
     cursor: pointer;
+    color: gray;
 }
 
 #RightScroll{
     position:absolute;
     right:0;
-    top:0;
-    width:35px;
-    height:35px;
-    border-radius:50%;
-    border:1px solid gray;
+    top:5px;
+    background-color: #FFFFFF;
+    outline: none;
+    border: none;
     cursor: pointer;
+    color: gray;
 }

@@ -10,7 +10,7 @@
 .BannerImage{
     width:100%;
     height:135px;
-    background-color: violet;
+    background-color: gray;
 }
 
 .BannerImage img{
@@ -86,4 +86,14 @@
 .MoreVert{
     flex:0.1;
     font-weight: lighter;
+}
+
+video::-webkit-media-controls-fullscreen-button{
+    display:none;
+}
+video::-webkit-media-controls-timeline{
+    display:none;
+}
+video::-webkit-media-controls-volume-slider{
+    display:none;
 }
