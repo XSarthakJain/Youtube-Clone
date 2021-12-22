@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Menuspace.css';
 import Subscriberlist from './Subscription.jsx';
-
+import {NavLink,Link} from 'react-router-dom';
 let SubscriptionListFun = (val)=>{
     return (
         <React.Fragment>
@@ -21,12 +21,15 @@ let Menuspace = ()=>{
     return (
         <React.Fragment>
             <ul className="MenuOptionList">
+                
+                <NavLink exact to='/' >
                 <li>
                     <span class="material-icons">
                     home
                     </span>
                     Home
                 </li>
+                </NavLink>
                 <li>
                     <span class="material-icons">
                     explore
@@ -65,12 +68,14 @@ let Menuspace = ()=>{
                     </span>
                     Watch Later
                 </li>
+                <NavLink exact to={'/liked'} >
                 <li>
                     <span class="material-icons">
                     thumb_up
                     </span>
                     Liked Videos
                 </li>
+                </NavLink>
 
                 <li>
                     <span class="material-icons">

@@ -1,0 +1,15 @@
+.RightSideSpace{
+    background-color: #F9F9F9;
+}
+.LikedOuter{
+    display:flex;
+}
+
+.LeftLikedSection{
+    width:30%;
+}
+.RightLikedSection{
+    width:70%;
+    background-color: #F1F1F1;
+    padding-right:1em;
+}
