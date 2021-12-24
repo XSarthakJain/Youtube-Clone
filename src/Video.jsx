@@ -1,8 +1,10 @@
-import React,{ useContext, useEffect } from 'react';
+import React,{ useContext, useEffect, useState } from 'react';
 import './css/Video.css';
 import preview from './media/Preview.mp4';
 import {NavLink} from 'react-router-dom';
 import Videosearchcontext from './context/Videosearchcontext';
+
+
 
 let VideoCard = (Vdata,ind)=>{
     let hoverImageData;
@@ -70,11 +72,14 @@ let VideoCard = (Vdata,ind)=>{
     );
 }
 let Video = ()=>{
-    const context = useContext(Videosearchcontext);
+    let context = useContext(Videosearchcontext);
 
-    const {data,setUpdate} = context;
+    let {data,setUpdate} = context;
+    let Carddata = context.data;
     // const a = useContext(Videosearchcontext)
-    console.log("A====================",data);
+    console.log("A====================",Carddata[0].snippet.thumbnails.high.url);
+
+    
     return  (
         data.map(VideoCard)  
     );
