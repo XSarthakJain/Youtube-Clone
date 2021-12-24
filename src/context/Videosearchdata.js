@@ -449,7 +449,12 @@ const [data,setUpdate] = useState(Tranding)
 }
 TrandingFun();
 
-
+// Search Value
+let searchValueContext;
+let updateSearchValue = (searchValue)=>{
+    searchValueContext = searchValue;
+    console.log("SearchValue ======================== ",searchValueContext);
+}
 
         return (
         <Videosearchcontext.Provider value={{data,setUpdate,updateSearchValue}}>
