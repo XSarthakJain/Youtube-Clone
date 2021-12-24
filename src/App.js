@@ -5,9 +5,11 @@ import Defaultscreen from './Defaultscreen.jsx';
 import WatchOuter from './WatchOuter.jsx';
 import Likedvideo from './Likedvideo.jsx';
 import { BrowserRouter, Routes ,Route } from 'react-router-dom';
+import Videosearchdata from './context/Videosearchdata';
 function App() {
   return (
     <React.Fragment>
+    <Videosearchdata>
     <Header></Header>
     <BrowserRouter>
     <Routes>
@@ -16,6 +18,7 @@ function App() {
         <Route exact path='/liked' element={<Likedvideo/>}/>
       </Routes>
     </BrowserRouter>
+    </Videosearchdata>
     </React.Fragment>
   );
 }

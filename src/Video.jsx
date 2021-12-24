@@ -1,8 +1,8 @@
-import React from 'react';
+import React,{ useContext, useEffect } from 'react';
 import './css/Video.css';
-import Videosdata from './Videosdata.jsx';
 import preview from './media/Preview.mp4';
 import {NavLink} from 'react-router-dom';
+import Videosearchcontext from './context/Videosearchcontext';
 
 let VideoCard = (Vdata,ind)=>{
     let hoverImageData;
@@ -22,25 +22,24 @@ let VideoCard = (Vdata,ind)=>{
     }
 
     let removeVideoOnImage = (val)=>{
-        // alert("Remove Data"+val+""+hoverImageData);
         document.getElementsByClassName("BannerImage")[val].innerHTML = hoverImageData;
     }
     return (
         <React.Fragment>
         <NavLink exact to="/watch" style={{textDecoration: 'none'}}>
-        <section class="Video">
+        <section class="Video" key={ind}>
             <div class="BannerImage" onMouseOver={()=>playVideoOnImage(ind)} onMouseLeave={()=>removeVideoOnImage(ind)}>
-                <img src={Vdata.BannerImage} alt="BannerImage"/>
+                <img src={Vdata.snippet.thumbnails.high.url} alt="BannerImage"/>
             </div>
             <div class="VideoContaintInfo">
                 <div className="ChannelPicOuter">
-                <img src={Vdata.ChannelPic} className="ChannelPic" alt="ChannelPic"/>
+                <img src="https://images.financialexpress.com/2018/11/t_series_logo.jpg" className="ChannelPic" alt="ChannelPic"/>
                 </div>
                 <div className="VideoInnerInfo">
-                <p className="VideoTitle">{Vdata.VideoTitle}</p>
+                <p className="VideoTitle">{Vdata.snippet.title}</p>
                 <div className="ChannelInfo">
                     <div class="ChannelInfoNameOuter">
-                    <span>{Vdata.ChannelName}</span>
+                    <span>{Vdata.snippet.channelTitle}</span>
                     
                     <span class="material-icons ChnnelBlueTic">
                     check_circle
@@ -53,7 +52,7 @@ let VideoCard = (Vdata,ind)=>{
                         <span class="material-icons UploadTime">
                         fiber_manual_record
                         </span>
-                         {Vdata.UploadTime}
+                         {Vdata.snippet.publishedAt}
                          </span>
                     </div>
 
@@ -71,8 +70,13 @@ let VideoCard = (Vdata,ind)=>{
     );
 }
 let Video = ()=>{
+    const context = useContext(Videosearchcontext);
+
+    const {data,setUpdate} = context;
+    // const a = useContext(Videosearchcontext)
+    console.log("A====================",data);
     return  (
-        Videosdata.map(VideoCard)
+        data.map(VideoCard)  
     );
 }
 

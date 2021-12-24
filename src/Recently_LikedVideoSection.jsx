@@ -8,7 +8,7 @@ let Recently_LikedVideoSection = ()=>{
         <React.Fragment>
             <div className='Recently_LikedVideoSectionOuter'>
                 <a href="#">PLAY ALL</a>
-                <img src='https://www.fotor.com/blog/wp-content/uploads/2019/10/Untitled-design-16.jpg' alt="Recently Like Video"/>
+                <img src='https://i0.wp.com/wikipura.com/wp-content/uploads/2021/04/maxresdefault-3.jpg' alt="Recently Like Video"/>
                 <h1>Liked Videos</h1>
                 <p><span>338 videos . No views . Update today</span></p>
                 <mark>
