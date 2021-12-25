@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
     <Routes>
         <Route exact path="/" element={<Defaultscreen/>}/>
-        <Route exact path="/watch" element={<WatchOuter/>}/>
+        <Route exact path="/watch/:vname/:vtitle/:ctitle/:vpublishtime/:clink/" element={<WatchOuter/>}/>
         <Route exact path='/liked' element={<Likedvideo/>}/>
       </Routes>
     </BrowserRouter>

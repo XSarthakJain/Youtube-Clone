@@ -1,14 +1,18 @@
 import React from 'react';
 import './css/Watchcontentinfo.css';
 import Watchchanneldetails from './Watchchanneldetails.jsx';
+import { useParams } from 'react-router-dom';
+
+
 
 let Watchcontentinfo = ()=>{
+    let {vtitle,vpublishtime} = useParams();
     return (
         <React.Fragment>
-            <h3 className="WatchcontentTitle">India vs China 🔥 | A must watch for all students | Honest Talk</h3>
+            <h3 className="WatchcontentTitle">{vtitle}</h3>
             <div className="WatchcontentInfoOuter">
                 <div className="WatchcontentInfoInnerLeft">
-                <span>233,503 views13 Dec 2021</span>
+                <span>{vpublishtime}</span>
                 </div>
 
                 <div className="WatchcontentInfoInnerRight">

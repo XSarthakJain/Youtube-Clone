@@ -6,6 +6,8 @@ import Videosearchcontext from './context/Videosearchcontext';
 
 
 
+let Video = ()=>{
+    let context = useContext(Videosearchcontext);  
 let VideoCard = (Vdata,ind)=>{
     let hoverImageData;
     let hoverImageDataNumber;
@@ -26,16 +28,17 @@ let VideoCard = (Vdata,ind)=>{
     let removeVideoOnImage = (val)=>{
         document.getElementsByClassName("BannerImage")[val].innerHTML = hoverImageData;
     }
+
     return (
         <React.Fragment>
-        <NavLink exact to="/watch" style={{textDecoration: 'none'}}>
+        <NavLink exact to={"/watch/"+Vdata.id+"/"+Vdata.snippet.title+"/"+Vdata.snippet.channelTitle+"/"+Vdata.snippet.publishedAt+"/"+Vdata.snippet.channelId} style={{textDecoration: 'none'}}>
         <section class="Video" key={ind}>
-            <div class="BannerImage" onMouseOver={()=>playVideoOnImage(ind)} onMouseLeave={()=>removeVideoOnImage(ind)}>
+            <div class="BannerImage" onMouseOver={()=>playVideoOnImage(ind)} onMouseLeave={()=>removeVideoOnImage(ind)} >
                 <img src={Vdata.snippet.thumbnails.high.url} alt="BannerImage"/>
             </div>
             <div class="VideoContaintInfo">
                 <div className="ChannelPicOuter">
-                <img src="https://images.financialexpress.com/2018/11/t_series_logo.jpg" className="ChannelPic" alt="ChannelPic"/>
+                <img src="https://images.financialexpress.com/2018/11/t_series_logo.jpg" className="ChannelPic" alt="ChannelPic" />
                 </div>
                 <div className="VideoInnerInfo">
                 <p className="VideoTitle">{Vdata.snippet.title}</p>
@@ -71,9 +74,6 @@ let VideoCard = (Vdata,ind)=>{
     </React.Fragment>
     );
 }
-let Video = ()=>{
-    let context = useContext(Videosearchcontext);
-
     let {data,setUpdate} = context;
     let Carddata = context.data;
     // const a = useContext(Videosearchcontext)
