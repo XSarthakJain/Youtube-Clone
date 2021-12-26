@@ -3,7 +3,7 @@ import './css/Video.css';
 import preview from './media/Preview.mp4';
 import {NavLink} from 'react-router-dom';
 import Videosearchcontext from './context/Videosearchcontext';
-
+import logo from './media/logo192.png';
 
 
 let Video = ()=>{
@@ -38,7 +38,7 @@ let VideoCard = (Vdata,ind)=>{
             </div>
             <div class="VideoContaintInfo">
                 <div className="ChannelPicOuter">
-                <img src="https://images.financialexpress.com/2018/11/t_series_logo.jpg" className="ChannelPic" alt="ChannelPic" />
+                <img src={logo} className="ChannelPic" alt="ChannelPic" />
                 </div>
                 <div className="VideoInnerInfo">
                 <p className="VideoTitle">{Vdata.snippet.title}</p>

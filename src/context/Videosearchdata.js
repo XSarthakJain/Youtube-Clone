@@ -817,8 +817,14 @@ let updateSearchValue = async(searchValue)=>{
        
 }
 
+let menuStateValue = 1;
+let menuState = async()=>{
+    await menuStateValue ++;
+    await console.log("MenuState Context API Launched",menuStateValue);
+}
+
         return (
-        <Videosearchcontext.Provider value={{data,setUpdate,updateSearchValue}}>
+        <Videosearchcontext.Provider value={{data,setUpdate,updateSearchValue,menuState,menuStateValue}}>
             {props.children}
         </Videosearchcontext.Provider>
     )

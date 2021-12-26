@@ -18,6 +18,10 @@ body{
   flex:0.2;
 }
 
+.LeftSideSpaceToggle{
+  width:50px;
+}
+
 .LeftSideSpace:hover{
   overflow-y:auto;
 }

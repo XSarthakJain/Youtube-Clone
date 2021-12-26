@@ -10,8 +10,8 @@ function App() {
   return (
     <React.Fragment>
     <Videosearchdata>
-    <Header></Header>
     <BrowserRouter>
+    <Header></Header>
     <Routes>
         <Route exact path="/" element={<Defaultscreen/>}/>
         <Route exact path="/watch/:vname/:vtitle/:ctitle/:vpublishtime/:clink/" element={<WatchOuter/>}/>

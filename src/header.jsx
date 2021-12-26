@@ -1,16 +1,28 @@
-import React from 'react';
+import React,{ useContext } from 'react';
 import './css/header.css';
 import logo from './media/Logo.PNG';
 import SearchBar from './Searchbar.jsx';
+import Videosearchcontext from './context/Videosearchcontext';
+import {NavLink}  from 'react-router-dom';
 let Header = ()=>{
+    const context = useContext(Videosearchcontext);
+    const { menuState } = context;
+
+    let menuTrigger = ()=>{
+        alert("menuTrigger");
+        menuState();
+    }
+    
     return(
     <React.Fragment>
     <header>
-            <span className="material-icons headerHamburger">
+            <span className="material-icons headerHamburger" onClick={()=>menuTrigger()}>
                 menu
             </span>
             <span className="headerLogo">
+                <NavLink exact to="/">
                 <img src={logo}></img>
+                </NavLink>
             </span>
             <div className="OuterHeaderSearchBar">
             <span className="HeaderSearchBar">
